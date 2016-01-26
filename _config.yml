@@ -1,0 +1,24 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: The Stay at Home Philosopher
+email: chad.ellison0123@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  It is not difficutl to become too busy to think or too overstimulated to have
+  the desire to do so, at least about things that don't seem to have an immediate
+  practical application. The world of ideas is as ripe for discovery as the cosmos;
+  they are each at once familiar and alien. The life of the mind should be pursued,
+  if for no other reason, for the sake of satisfying our curiosity.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: ChadEllison0123
+github_username:  chadellison
+
+# Build settings
+markdown: kramdown
