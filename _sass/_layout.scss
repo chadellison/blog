@@ -8,6 +8,7 @@
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    background-color: #e0e0eb;
 }
 
 .site-title {
@@ -27,7 +28,6 @@
 .site-nav {
     float: right;
     line-height: 56px;
-
     .menu-icon {
         display: none;
     }
@@ -83,7 +83,6 @@
         .page-link {
             display: block;
             padding: 5px 10px;
-
             &:not(:last-child) {
                 margin-right: 0;
             }
@@ -98,7 +97,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    // border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
@@ -115,7 +114,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: black;
     margin-left: -$spacing-unit / 2;
     margin-right: -180px;
     @extend %clearfix;
@@ -186,8 +185,8 @@
 }
 
 .post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+    font-size: 20px;
+    color: black;
 }
 
 .post-link {
@@ -208,7 +207,6 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
-
     @include media-query($on-laptop) {
         font-size: 36px;
     }
@@ -216,6 +214,8 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+    background-color: #e0e0eb;
+    padding: 20px;
 
     h2 {
         font-size: 32px;
@@ -235,7 +235,6 @@
 
     h4 {
         font-size: 20px;
-
         @include media-query($on-laptop) {
             font-size: 18px;
         }

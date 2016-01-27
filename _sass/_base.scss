@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -91,11 +89,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: #003266;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: #003266;
     }
 
     &:hover {
