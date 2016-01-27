@@ -35,7 +35,6 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
-
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
             margin-right: 20px;
@@ -102,7 +101,9 @@
 }
 
 .footer-heading {
-    font-size: 18px;
+    float: right;
+    margin-right: -420px;
+    font-size: 24px;
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -110,20 +111,23 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    float: right;
 }
 
 .footer-col-wrapper {
     font-size: 15px;
     color: black;
     margin-left: -$spacing-unit / 2;
-    margin-right: -180px;
+    margin-right: -420px;
     @extend %clearfix;
+
 }
 
 .footer-col {
-    float: left;
+    float: right;
     margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    // padding-left: $spacing-unit / 2;
+    clear: both;
 }
 
 .footer-col-1 {
@@ -132,13 +136,16 @@
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    // width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    // width:         calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+    background-color: #e0e0eb;
+    padding: 10px 10px 0px 15px;
+    border-radius: 10px;
 }
 
 @include media-query($on-laptop) {
@@ -151,11 +158,14 @@
     .footer-col-3 {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
+
     }
 }
 
 @include media-query($on-palm) {
     .footer-col {
+      background-color: white;
+
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
