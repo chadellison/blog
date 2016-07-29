@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Rails 5 Action Cable"
-date:   2016-07-29 22:17:38 -0700
 categories: jekyll update
 ---
 Texas Holdem using Rails 5 action Cable
