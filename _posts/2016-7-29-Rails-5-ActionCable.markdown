@@ -5,9 +5,7 @@ categories: jekyll update
 ---
 Texas Holdem using Rails 5 action Cable
 
-Intro
-
-One of the defining features of Rails Five is Action Cable. Action Cable allows one to integrate web sockets into a rails app for realtime updates. Most examples of Action Cable that I came across were chat applications. I wondered what it would be like to use it to build something more sophisticated, something like Texas Holdem. Texas Holdem requires several components that are available to all players (i.e. the flop, turn, river, blinds, pot, etc.) as well as components that only a particular user can see; namely, the pocket cards. With the combination of learning Action Cable and building the game logic for Texas Holdem (I did not use any libraries), I knew this would be a great way to challenge myself, and have fun doing it!
+One of the defining features of Rails Five is Action Cable. Action Cable allows one to integrate web sockets into a rails app for realtime updates. Most examples of Action Cable that I came across were chat applications. I wondered what it would be like to build something more sophisticated, something like Texas Holdem. Texas Holdem requires several components that are available to all players (i.e. the flop, turn, river, blinds, pot, etc.) as well as components that are unique to each particular user(i.e. the pocket cards). I used the [Deck of Cards Api]("http://deckofcardsapi.com/") for the images of playing cards, but I just used raw ruby for the hand analysis / game logic. This part and experimenting with Action Cable was the most fun!
 
 Some of the Challenges I came across
 I knew that this project would require a lot of trial and error. Because it is a new technology, there aren't many online resources. I got the same 10 - 15 results when I googled anything with the name "action cable". Moreover, I'm not aware of how to feature test web sockets, so every time I added a feature, I would simply have to log in as two different users and click around to make sure I didn't break anything.
@@ -48,11 +46,19 @@ end
 {% endhighlight %}
 
 The Awesomesauce of Action Cable
-Action Cable is fairly intuitive and easy to work with--at least compared to socket io with node. I've been working on this app for about two weeks and here are some of the things I've been able to do:
+Action Cable is fairly intuitive and easy to work with--at least compared with socket io in node. I've been working on this app for about two weeks and here are some of the things I've been able to do:
 
-(screen shot)
+Users can play with other users, Ai Players, or both-- users can even just watch Ai Players play.
+Each player sees their own pocket cards, while all players see the game cards (flop, turn, and river). Action buttons appear only for the player whose turn it is, and the player's name is highlighted in red. After each winning round, the blinds rotate clockwise. A chat box on to the left announces the stage of the game and player actions. It also allows the players to speak with one another. Here is an example:
 
-All players see the game cards while each player only sees their unique pocket cards. I've also highlighted the player whose turn it is in red and ensured that the action buttons (check, bet, fold) only appear on the client's screen if it is that client's turn. Too add to this, I also made AI players so that a user can play with only other users, only AI players, or a combination of the two.
+![Example Game](https://raw.githubusercontent.com/chadellison/texas_holdem/master/app/assets/images/game_play.png)
+
+When a player initiates a bet, a box opens like so:
+![Bet](https://raw.githubusercontent.com/chadellison/texas_holdem/master/app/assets/images/bet.png)
+
+At the end of each showdown the winner and the winner's hand is revealed:
+![Bet](https://raw.githubusercontent.com/chadellison/texas_holdem/master/app/assets/images/winner.png)
+
 
 Concluding thoughts
 
