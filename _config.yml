@@ -10,10 +10,10 @@ title: The Stay at Home Philosopher
 email: chad.ellison0123@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   It's not uncommon to find oneself too busy to think or too overstimulated to have
-  the desire to do so, at least about things that don't have immediate
+  the desire to do so, at least about things that don't have an immediate
   application. The world of ideas is as ripe for discovery as the cosmos;
   they are each at once familiar and alien. The life of the mind is a worthy endeavor,
-  if for no other reason, for the sake of satisfying our curiosity.
+  if for no other reason, than for the sake of satisfying our curiosity.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
